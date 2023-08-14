@@ -4,6 +4,8 @@
  */
 package com.mycompany.formulariologin;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Loboplateado77
@@ -68,14 +70,14 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1))
-                        .addGap(81, 81, 81)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTcontraceña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(14, 14, 14)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTcontraceña, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(142, 142, 142)
                         .addComponent(jBaceptar)))
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,7 +111,7 @@ public class Login extends javax.swing.JFrame {
         
         if (usuarios.equals("alumno@ulp.edu.ar")&& contraceñas.equals("12345678")){
             JOptionPane.showMessageDialog(this,"Bienvenidos al sistema");
-        }else {JOptionPane.showMessageDialog(this,"Error al igreso");
+        }else {JOptionPane.showMessageDialog(this,"Error al ingresar los datos");}
         
     }//GEN-LAST:event_jBaceptarActionPerformed
 
